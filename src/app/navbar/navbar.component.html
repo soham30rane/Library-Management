@@ -1,0 +1,18 @@
+<section id="navbar">
+    <div id="nav-container">
+        <div class="nav-logo">
+            <img [src]="navbarLogoPath" alt="books-logo">
+            <p> {{ navTitle }} </p>
+        </div>
+        <div class="nav-item-container">
+            <a href="#">Home</a>
+            <a href="#">Books</a>
+            <a href="#">People</a>
+            <a href="#">Issues</a>
+        </div>
+        <div class="nav-search">
+            <input type="text" placeholder="Search a book or person">
+            <button class="search-btn"><img [src]="navbarSearchIconPath" alt="search"></button>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,63 @@
+/* Style the feature item */
+.home-item {
+    flex-basis: 33.33% ;
+    background-color: #deb3a0f7;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-sizing: border-box; /* Ensure padding doesn't affect the overall size */
+    max-width: 250px; /* Maximum width of the item */
+    height: 400px;
+    margin: 30px 80px;
+    display: flex; /* Use flexbox to align items vertically */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Space between items */
+    transition: transform 0.2s ease;
+}
+
+.home-item:hover {
+    transform: translateY(-5px); /* Lift the card slightly on hover */
+    transform: scale(1.2);
+}
+
+/* Style the feature item image container */
+.home-item-img {
+    width: 180px;
+    height: 180spx;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Style the image within the container */
+.home-item-img img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block; /* Remove extra spacing below the image */
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 10px;
+}
+
+/* Style the feature item title */
+.home-item h3 {
+    font-size: 18px;
+    margin-top: 20px; /* Ensure space between title and image */
+    margin-bottom: 10px; /* Add spacing between title and description */
+}
+
+/* Style the feature item description */
+.home-item p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Style the link icon */
+.home-feature-link-icon {
+    width: 24px;
+    height: 24px;
+    margin-top: auto;
+}
+.home-feature-link-icon:hover {
+    transform: scale(1.5);
+}

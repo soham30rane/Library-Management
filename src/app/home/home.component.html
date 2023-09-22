@@ -1,0 +1,9 @@
+<section class="home-container">
+    <div class="home-item-container">
+        <app-home-item *ngFor="let feature of features" 
+        [featureName]="feature.name" 
+        [featureDescription]="feature.description" 
+        [featureImageFilename]="feature.imgname"
+        ></app-home-item>
+    </div>
+</section>

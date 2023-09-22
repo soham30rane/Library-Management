@@ -1,0 +1,18 @@
+.home-container {
+    margin: 50px 20px;
+    padding: 30px 2px;
+    background: linear-gradient(to bottom, #007BFF, #0056b3);
+}
+
+.home-item-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: center;
+}
+
+::ng-deep body {
+    background: linear-gradient(to bottom, #007BFF, #0056b3);
+  }
+  
