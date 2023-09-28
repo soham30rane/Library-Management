@@ -1,1 +1,33 @@
-<p>book-item works!</p>
+<div class="book-item">
+    <div class="book-item-head">
+        <p>#B{{bookID}}</p>
+        <div class="book-buttons">
+            <button class="book-btns">
+                <img [src]="getEditIconPath()" alt="edit">
+            </button>
+            <button class="book-btns">
+                <img [src]="getGiveBookIconPath()" alt="issue">
+            </button>
+            <button class="book-btns">
+                <img [src]="getDeleteIconPath()" alt="delete">
+            </button>
+        </div>
+    </div>
+    <div class="book-item-content">
+        <img [src]="getBookImgPath()" alt="book1">
+        <div class="book-item-text">
+            <h1> {{bookTitle}} </h1>
+                <div><span class="by-label">by</span>
+                <span class="author"> {{bookAuthor}} </span>
+            </div>
+            <span class="published-label">Published in {{publishYear}} </span>
+            <span class="book-status">Status : <img [src]="getStatusImgPath()" alt=""> {{getStatusText()}} </span>
+            <div class="book-social">
+                <button class="book-btns book-forum-btn">
+                    <img [src]="getForumIconPath()" alt="forum btn">
+                </button>
+                <app-star-rating [value]="bookRating"></app-star-rating>
+            </div>
+        </div>
+    </div>
+</div>

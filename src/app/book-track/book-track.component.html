@@ -1,1 +1,14 @@
-<p>book-track works!</p>
+<div class="content-container">
+    <app-buttons-bar></app-buttons-bar>
+    <div class="book-items-container">
+        <app-book-item *ngFor="let book of books" 
+        [bookID]="book.id" 
+        [bookTitle]="book.title" 
+        [bookAuthor]="book.author" 
+        [publishYear]="book.publishyear" 
+        [bookStatus]="book.isAvailable" 
+        [bookRating]="book.rating" 
+        [bookImgFileName]="book.imgname" 
+        ></app-book-item>
+    </div>
+</div>
