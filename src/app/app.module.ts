@@ -10,6 +10,8 @@ import { BookTrackComponent } from './book-track/book-track.component';
 import { BookItemComponent } from './book-track/book-item/book-item.component';
 import { StarRatingComponent } from './book-track/star-rating/star-rating.component';
 import { ButtonsBarComponent } from './book-track/buttons-bar/buttons-bar.component';
+import { PeopleFindComponent } from './people-find/people-find.component';
+import { PersonItemComponent } from './people-find/person-item/person-item.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ButtonsBarComponent } from './book-track/buttons-bar/buttons-bar.compon
     BookTrackComponent,
     BookItemComponent,
     StarRatingComponent,
-    ButtonsBarComponent
+    ButtonsBarComponent,
+    PeopleFindComponent,
+    PersonItemComponent,
   ],
   imports: [
     BrowserModule,

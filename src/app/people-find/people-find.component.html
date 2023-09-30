@@ -1,0 +1,15 @@
+<div class="content-container">
+    <app-buttons-bar></app-buttons-bar>
+    <div class="person-items-container">
+        <app-person-item *ngFor="let person of people" 
+        [personId]="person.id" 
+        [personName]="person.fullname" 
+        [personPhone]="person.phoneNum" 
+        [personEmail]="person.emailId" 
+        [totalBooks]="person.totalBooks" 
+        [booksOverdue]="person.booksOverdue" 
+        [dueThisWeek]="person.booksDue" 
+        [personImgName]="person.imgname" 
+        ></app-person-item>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="person-item">
+    <div class="person-item-head">
+        <button class="person-btns">
+            <img [src]="getEditIconPath()" alt="edit">
+        </button>
+    </div>
+    <div class="person-profile">
+        <img [src]="getPersonImgPath()" alt="profile pic">
+        <p> {{personName}} </p>
+    </div>
+    <div class="person-detail">
+        <span class="phone-num"><img [src]="getPhoneIconPath()" alt=""> : {{personPhone}} </span>
+        <span class="email-id"><img [src]="getEmailIconPath()" alt=""> : {{personEmail}} </span>
+        <div class="person-status">
+            <span class="book-count"> {{totalBooks}} books issued</span>
+            <br><span><img [src]="getRedDotIconPath()" alt=""> {{booksOverdue}} books overdue</span>
+            <br><span><img [src]="getBlueDotIconPath()" alt=""> {{dueThisWeek}} books due this week</span>
+        </div>
+    </div>
+    <div class="person-item-foot">
+        <p>#R{{personId}}</p>
+        <button class="person-btns"><img [src]="getIssueIconPath()" alt="issue book"></button>
+    </div>
+</div>
