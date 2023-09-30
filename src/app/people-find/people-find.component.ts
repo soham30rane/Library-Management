@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { peopleData } from './dummy-data';
+import { NavTabs, currentTab } from '../navbar/navbar.component';
 
 @Component({
   selector: 'app-people-find',
@@ -11,5 +12,6 @@ export class PeopleFindComponent {
 
   constructor(){
     this.people = peopleData;
+    currentTab.value = NavTabs.People;
   }
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { booksData } from './dummy-data';
+import { NavTabs,currentTab } from '../navbar/navbar.component';
 
 @Component({
   selector: 'app-book-track',
@@ -11,6 +12,7 @@ export class BookTrackComponent {
 
   constructor(){
     this.books = booksData;
+    currentTab.value = NavTabs.Books;
   }
 
 }
