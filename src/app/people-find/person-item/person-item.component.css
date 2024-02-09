@@ -1,0 +1,147 @@
+.person-item {
+    background-color: white;
+    text-align: left;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    width: 200px;
+    height: 300px;
+    margin: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.2s ease;
+}
+
+.person-item:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.person-item-head {
+    height: 30px;
+    max-width: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.person-profile {
+    max-width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+.person-profile img {
+    width : 70px;
+    height: 70px;
+    margin: 15px 65px 2px 65px;
+    align-self: center;
+    border-radius: 50%;
+    transition: trasnform 0.2s ease ;
+}
+
+.person-profile img:hover {
+    transform: scale(1.4);
+}
+
+.person-profile p {
+    margin: 0;
+    font-family: "Arial", sans-serif; 
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; 
+}
+
+.person-detail {
+    max-width: 200px;
+    height: 140px;
+    padding: 20px 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.person-item-foot {
+    height: 30px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    background-color: azure;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.person-item-foot p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: darkgrey;
+    margin: 2px 20px;
+}
+
+.person-btns {
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    justify-self: flex-end;
+    box-shadow: none;
+    margin: 1px 10px;
+    margin-left: auto;
+}
+
+.person-btns img {
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+}
+
+.person-btns:hover {
+    transform: scale(1.2);
+    box-shadow: none;
+    
+}
+
+/* Text content in book item */
+
+.phone-num, 
+.email-id {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #555;
+    margin: 2px;
+}
+
+.email-id {
+    font-size: 11px;
+}
+
+.phone-num img:hover, 
+.email-id img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+} 
+
+.phone-num img,
+.email-id img {
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    display: inline;
+}
+
+.person-status {
+    margin-top: auto;
+    font-size: 14px;
+}
+
+.person-status .book-count {
+    text-decoration: underline;
+}
+
+.person-status span img {
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    display: inline;
+}

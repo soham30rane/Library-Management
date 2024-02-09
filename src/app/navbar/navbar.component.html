@@ -5,10 +5,18 @@
             <p> {{ navTitle }} </p>
         </div>
         <div class="nav-item-container">
-            <a href="#">Home</a>
-            <a href="#">Books</a>
-            <a href="#">People</a>
-            <a href="#">Issues</a>
+            <a routerLink="" routerLinkActive="active" ariaCurrentWhenActive="page">
+                <span [class.working-tab]="workingTab.value == eNavTabs.Home" > Home </span>
+            </a>
+            <a routerLink="/book-track" routerLinkActive="active" ariaCurrentWhenActive="page">
+                <span [class.working-tab]="workingTab.value == eNavTabs.Books" > Books </span>
+            </a>
+            <a routerLink="/find-people" routerLinkActive="active" ariaCurrentWhenActive="page">
+                <span [class.working-tab]="workingTab.value == eNavTabs.People" > People </span>
+            </a>
+            <a routerLink="/issues" routerLinkActive="active" ariaCurrentWhenActive="page">
+                <span [class.working-tab]="workingTab.value == eNavTabs.Issues" > Issues </span>
+            </a>
         </div>
         <div class="nav-search">
             <input type="text" placeholder="Search a book or person">

@@ -5,14 +5,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
-import { HomeItemComponent } from './home-item/home-item.component';
+import { HomeItemComponent } from './home/home-item/home-item.component';
+import { BookTrackComponent } from './book-track/book-track.component';
+import { BookItemComponent } from './book-track/book-item/book-item.component';
+import { StarRatingComponent } from './book-track/star-rating/star-rating.component';
+import { ButtonsBarComponent } from './book-track/buttons-bar/buttons-bar.component';
+import { PeopleFindComponent } from './people-find/people-find.component';
+import { PersonItemComponent } from './people-find/person-item/person-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    HomeItemComponent
+    HomeItemComponent,
+    BookTrackComponent,
+    BookItemComponent,
+    StarRatingComponent,
+    ButtonsBarComponent,
+    PeopleFindComponent,
+    PersonItemComponent,
   ],
   imports: [
     BrowserModule,

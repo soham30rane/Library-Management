@@ -1,0 +1,151 @@
+.book-item {
+    background-color: aliceblue;
+    text-align: left;
+    border-radius: 2px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    width: 400px;
+    height: 230px;
+    margin: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease;
+}
+
+.book-item-head {
+    align-self: flex-start;
+    height: 30px;
+    width: 400px;
+    background-color:azure;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-item-head p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: darkgrey;
+    margin: 2px 20px;
+}
+
+.book-item-content {
+    align-self: flex-end;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.book-item-content img {
+    width: 160px;
+    height: 200px;
+    display: block;
+    align-self: flex-end;
+}
+
+.book-item:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Text content in book item */
+
+.book-social {
+    align-self: flex-end;
+    margin : auto 5px 5px 5px ;
+}
+
+.book-item-text {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding: 5px 10px;
+}
+
+.book-item-text h1{
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.book-item-text span.by-label, 
+.book-item-text span.published-label {
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #666;
+    margin: 3px 1px 1px 5px;
+}
+
+.book-item-text span.published-label {
+    font-size: 11px;
+    margin: 8px 0 5px 5px;
+    color: #666;
+    font-weight:normal;
+}
+
+.book-item-text span.author {
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #666;
+    margin: 1px ;
+}
+
+.book-btns {
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    justify-self: flex-end;
+    box-shadow: none;
+    margin: 1px 10px;
+    margin-left: auto;
+}
+
+.book-forum-btn {
+    margin: 0 10px;
+    box-shadow: 1px 2px 3px 0 rgba(0, 0, 0, 0.1);
+    
+}
+
+.book-btns img {
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+}
+
+.book-forum-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.book-btns:hover {
+    transform: scale(1.2);
+    box-shadow: none;
+    
+}
+
+.book-forum-btn:hover {
+    box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.book-status {
+    margin: auto 5px 3px 3px;
+}
+
+.book-status img {
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    display: inline;
+}
